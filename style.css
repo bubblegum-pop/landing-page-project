@@ -11,3 +11,15 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}

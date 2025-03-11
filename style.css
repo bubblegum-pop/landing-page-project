@@ -1,3 +1,7 @@
+* {
+    border: 1px solid pink;
+}
+
 body {
     font-family: Roboto, sans-serif;
     display: flex;
@@ -12,8 +16,8 @@ body {
     color: #F9FaF8;
     font-size: 24px;
     display: flex;
-    justify-content: space-around;
-    padding: 12px;
+    justify-content: space-between;
+    padding: 12px 10%;
     font-weight: bold;
     align-items: center;
     height: 32px;
@@ -39,7 +43,6 @@ a {
 
 .header > div {
     flex-shrink: 0;
-    margin: 0 8px;
 }
 
 li {
@@ -47,4 +50,47 @@ li {
     padding: 0;
     display: flex;
     align-items: center;
+}
+
+.hero {
+    background-color: #1F2937;
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    padding: 0 10%;
+    gap: 32px;
+    align-items: center;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+}
+
+.hero-main-text {
+    color: #F9FaF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-subtext {
+    color: #E5E7EBE5;
+    font-size: 18px;
+}
+
+.hero-left .signup-button {
+    align-self: center;
+}
+
+.hero-right {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    justify-content: flex-end;
+}
+
+.hero-right > img {
+    height: 320px;
+    width: auto;
 }

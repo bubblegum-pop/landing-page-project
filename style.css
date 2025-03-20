@@ -34,10 +34,17 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+li a {
     color: #E5E7EBE5;
     font-size: 18px;
     font-weight: 200;
     margin: 0;
+}
+
+.logo {
+    color: #F9FaF8;
 }
 
 .header > div {

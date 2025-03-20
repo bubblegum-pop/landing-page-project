@@ -92,13 +92,13 @@ li {
     align-self: flex-start;
     background-color: #3882F6;
     color: #F9FaF8;
+    border: none;
 }
 
 .signup-button {
     padding: 6px 34px;
     font-size: 18px;
     border-radius: 8px;
-    border: none;
 }
 
 .hero-right {
@@ -174,7 +174,7 @@ li {
 
 .quote > p {
     font-size: 36px;
-    font-weight: 200;
+    font-weight: lighter;
     font-style: italic;
     align-self: center;
     margin: 0 80px;
@@ -185,4 +185,42 @@ li {
     font-weight: bold;
     align-self: last baseline;
     margin: 0 80px 0 0;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.call-to-action-box {
+    background-color: #3882F6;
+    border: 1px solid #3882F6;
+    height: 60px;
+    flex-grow: 1;
+    display: flex;
+    padding: 40px 100px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-to-action-text div:nth-child(1) {
+    font-size: 22px;
+    color: #F9FaF8;
+    font-weight: bold;
+}
+
+.call-to-action-text div:nth-child(2) {
+    font-size: 18px;
+    color: #E5E7EBE5;
+    font-weight: lighter;
+}
+
+.call-to-action-box .signup-button {
+    background-color: #3882F6;
+    border: 2px solid #F9FaF8;
+    color: #F9FaF8;
 }

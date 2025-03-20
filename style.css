@@ -224,3 +224,13 @@ li {
     border: 2px solid #F9FaF8;
     color: #F9FaF8;
 }
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EBE5;
+    font-size: 18px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

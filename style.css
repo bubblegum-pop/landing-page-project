@@ -91,6 +91,7 @@ li {
     padding: 6px 34px;
     font-size: 18px;
     border-radius: 8px;
+    border: none;
 }
 
 .hero-right {
@@ -98,4 +99,58 @@ li {
     align-items: center;
     padding: 60px 0;
     justify-content: flex-end;
+}
+
+.fa-solid {
+    color: #3882F6;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    gap: 40px;
+    }
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6e7681;
+    text-align: center;
+    gap: 8px;
+    padding: 0 40px;
+}
+
+.card > div {
+    flex-grow: 0;
+}
+
+.card-text {
+    flex-wrap: wrap;
+}
+
+.card-icon {
+    border: 4px solid #3882F6;
+    height: 160px;
+    width: 160px;
+    border-radius: 20%;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

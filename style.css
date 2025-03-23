@@ -1,3 +1,7 @@
+* {
+    border: 1px solid red;
+}
+
 body {
     font-family: Roboto, sans-serif;
     display: flex;
@@ -7,23 +11,48 @@ body {
     padding: 0;
 }
 
-body > div {
-    padding: 0 12%;
+/* All body sections */
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-.header {
+.section * {
+    min-width: 0;
+}
+
+/* Webpage content containers */
+
+.content {
+    max-width: 1450px;
+    min-width: 0;
+    border: 1px solid greenyellow;
+    flex: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Header */
+
+.header.section {
     background-color: #1F2937;
+    height: 60px;
+}
+
+.header.content {
+    justify-content: space-between;
+}
+
+.header-logo {
     color: #F9FaF8;
     font-size: 24px;
-    display: flex;
-    justify-content: space-between;
     font-weight: bold;
-    align-items: center;
-    height: 60px;
-    flex-shrink: 0;
 }
 
-ul {
+.header-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -43,14 +72,6 @@ li a {
     margin: 0;
 }
 
-.logo {
-    color: #F9FaF8;
-}
-
-.header > div {
-    flex-shrink: 0;
-}
-
 li {
     margin: 0;
     padding: 0;
@@ -58,12 +79,11 @@ li {
     align-items: center;
 }
 
-.hero {
+/* Hero section */
+
+.hero.section {
     background-color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    height: 400px;
 }
 
 .hero-left {
@@ -71,10 +91,6 @@ li {
     flex-direction: column;
     justify-content: space-between;
     gap: 12px;
-}
-
-.hero > div {
-    flex: 1;
 }
 
 .hero-main-text {
@@ -104,16 +120,16 @@ li {
 .hero-right {
     display: flex;
     align-items: center;
-    padding: 60px 0;
-    justify-content: flex-end;
+    justify-content: center;
 }
+
+/* Info section */
 
 .fa-solid {
     color: #3882F6;
 }
 
 .info {
-    display: flex;
     flex-direction: column;
     color: #1F2937;
     font-size: 36px;
@@ -162,14 +178,15 @@ li {
     justify-content: center;
 }
 
+/* Quote section */
+
 .quote {
     background-color: #e5e7eb;
     color: #1F2937;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .quote > p {
@@ -177,18 +194,19 @@ li {
     font-weight: lighter;
     font-style: italic;
     align-self: center;
-    margin: 0 80px;
+    margin: 0 300px;
 }
 
 .quote > div {
     font-size: 24px;
     font-weight: bold;
     align-self: last baseline;
-    margin: 0 80px 0 0;
+    margin: 0 300px 0 0;
 }
 
+/* Call to action section */
+
 .call-to-action {
-    display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
@@ -225,12 +243,13 @@ li {
     color: #F9FaF8;
 }
 
+/* Footer */
+
 .footer {
     background-color: #1F2937;
     color: #E5E7EBE5;
     font-size: 18px;
     height: 100px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
